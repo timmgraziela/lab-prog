@@ -49,18 +49,51 @@ def q03():
     cont = 0
     for num in lista:
         print(f'{cont}: {num}')
-        if num/2 == 
+        if num%2 == 0:
+            print('par')        
+        else:
+            print('impar')
         cont+=1
-q03()
+
 #4. Faça um programa que armazene 8 números em uma lista e imprima todos os
 #números. Ao final, imprima o total de números múltiplos de seis.
-
+def q04():
+    lista = []
+    soma=0
+    for x in range(8):
+        lista.append(random.randrange(1000))
+    print(lista)
+    for num in lista:
+        if num%6 == 0:
+            soma+=1
+    print(f'Qtde de numeros multiplos de seis: {soma}')
+q04()
 #5. Faça um programa que armazene as notas das provas 1 e 2 de 15 alunos. Calcule
 #e armazene a média arredondada. Armazene também a situação do aluno: 1-
 #Aprovado ou 2-Reprovado. Ao final o programa deve imprimir uma listagem
 #contendo as notas, a média e a situação de cada aluno em formato tabulado.
 #Utilize quantas listas forem necessárias para armazenar os dados.
+def q05()
+    notas_prova1 = []
+    notas_prova2 = []
+    medias_arredondadas = []
+    situacao = []
+    for x in range(15)
+        nota1 = random.randrange(11)
+        nota2 = random.randrange(11)
+        media = (nota1 + nota2)/2
 
+        if media >=7:
+            situacao.append('aprovado')
+        else
+            situacao.append('reprovado')
+            notas_prova1.append(nota1) 
+            notas_prova2.append(nota2)
+            medias_arredondadas.append(media)
+            print(medias_arredondadas[x], situacao[x])
+            print('Listagem de notas, medias e situaçoes dos alunos')
+            print('Nota Prova 1\tNota prova 2\tMedia\tSituacao')
+q05()
 #6. Construa um programa que permita armazenar o salário de 20 pessoas. Calcular
 #e armazenar o novo salário sabendo-se que o reajuste foi de 8%. Imprimir uma
 #listagem numerada com o salário e o novo salário. Declare quantas listas forem
@@ -133,4 +166,10 @@ q03()
 
 #20. Faça um programa que leia a matrícula e a média de 100 alunos. Ordene da maior
 #para a menor nota e imprima uma relação contendo todas as matrículas e médias.
+
+
+
+
+
+
 
